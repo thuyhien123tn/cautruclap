@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fibonaci</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p id="result"></p>
+  <script>
+    let length = parseInt(prompt("Nhập số chiều dài dãy số fibonaci "));
+    let fibo = [1, 1];
+    for (let i = 2; i < length; i++) {
+      let number = fibo[i - 1] + fibo[i - 2];
+      fibo.push(number);
+      console.log(number, 'number');
+      console.log(fibo, 'fibo')
+    }
+    document.getElementById("result").innerHTML = fibo;
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Đoán số</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <button onclick="play()">Chơi</button>
+    <script>
+      const play = () => {
+        let min = parseInt(prompt("Nhập số bé nhất được chọn: "));
+        let max = parseInt(prompt("Nhập số lớn nhất được chọn: "));
+        let result = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(result, 'result')
+
+        for (let i = 0; i < 3; i ++) {
+          let value = parseInt(prompt("Nhập số mà bạn chọn: "));
+          console.log(value, 'value')
+          if(result == value) {
+            alert("Bạn là người chiến thắng");
+            return;
+          }
+        }
+        alert("Bạn thua cuộc");
+      }
+    </script>
+  </body>
+
+</html>

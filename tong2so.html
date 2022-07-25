@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Đảo ngược</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p id="result"></p>
+  <script>
+    let number1 = +prompt("Nhập số nguyên dương a: ");
+    let number2 = +prompt("Nhập số nguyên dương b: ");
+    let sum = 0;
+    if (number1 >= number2) {
+      alert("a phải nhỏ hơn b");
+    } else {
+      while (number1 <= number2) {
+        sum += number1;
+        number1 ++;
+      }
+      console.log(sum, 'sum')
+    }
+    alert("Tổng của các số là "+ sum);
+  </script>
+</body>
+
+</html>
